@@ -63,8 +63,6 @@
 			<version>${slf4j.version}</version>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-all</artifactId>
@@ -86,7 +84,7 @@
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>1.9.5</version>
+			<version>${mockito-core.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -95,12 +93,7 @@
 			<version>${spring.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.jayway.jsonpath</groupId>
-			<artifactId>json-path</artifactId>
-			<version>0.8.1</version>
-			<scope>test</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>com.jayway.jsonpath</groupId>
 			<artifactId>json-path-assert</artifactId>
@@ -119,11 +112,24 @@
 			<artifactId>spring-hateoas</artifactId>
 			<version>0.25.0.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.jayway.jsonpath</groupId>
 			<artifactId>json-path</artifactId>
-			<version>2.2.0</version>
+			<version>2.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.minidev</groupId>
+			<artifactId>asm</artifactId>
+			<version>1.0.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.minidev</groupId>
+			<artifactId>json-smart</artifactId>
+			<version>2.2.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -157,7 +163,7 @@
 		<jackson.version>2.9.4</jackson.version>
 		<jaxb-api.version>2.2.11</jaxb-api.version>
 		<springfox-swagger.version>2.7.0</springfox-swagger.version>
-		<slf4j.version>1.7.5</slf4j.version>		
-
+		<slf4j.version>1.7.5</slf4j.version>
+		<mockito-core.version>1.9.5</mockito-core.version>	
 	</properties>
 </project>
